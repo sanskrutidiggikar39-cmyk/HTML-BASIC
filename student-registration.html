@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color: rgb(201,171,169);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    background-image:
+    url("https://images.pexels.com/photos/2919587/pexels-photo-2919587.jpeg");
+
+    background-size: cover;
+    .container{
+    width:400px;
+    margin:auto;
+    padding:20px;
+
+    background:rgba(0,0,0,0.5);
+
+    border-radius:15px;
+}
+
+input{
+    padding:8px;
+    border-radius:5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
+<script>
+function validateForm(){
+
+let marks=document.forms[0]["marks"].value;
+
+if(marks<0 || marks>100){
+alert("Marks should be between 0 and 100");
+return false;
+}
+
+return true;
+
+}
+</script>
+</head>
+
+<body>
+
+<form action="submit_profile.php" method="post">
+
+<h1 align="center"><i>Student Profile</i></h1>
+
+<div align="center">
+
+ENTER NAME:
+<input type="text" name="name" placeholder="ENTER NAME">
+<br><br>
+
+ENTER AGE:
+<input type="number" name="age" placeholder="ENTER AGE" min="18" max="60" required> 
+<br> <br>
+<medium style="color:red; font-weight:bold">Enter age between 18 and 60</medium>
+<br><br>
+
+ENTER COURSE:
+<input type="text" name="course" placeholder="ENTER COURSE">
+<br><br>
+
+ENTER DEPARTMENT:
+<input type="text" name="department" placeholder="ENTER DEPARTMENT">
+<br><br>
+
+ENTER MARKS:
+<input type="number" name="marks" placeholder="ENTER" min="0" max="100" required> 
+<br><br>
+<medium style="color:red; font-weight:bold">Enter marks between 0 and 100</medium>
+<br><br>
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</div>
+</form>
+
+<footer align="center" style="margin-top:20px;">
+© 2026 Student Profile. All rights reserved.
+</footer>
+
+</body>
+</html>
