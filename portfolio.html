@@ -1,0 +1,136 @@
+<style>
+body {
+    background-color: #f8fafc; /* Your light background color */
+    color: #1e293b;            /* Soft dark slate text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.portfolio-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Header layout using Flexbox */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Prevents squeezing on small screens */
+}
+
+.bio-text h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+    color: #0f172a;
+}
+
+.profile-img-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #e2e8f0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 30px 0;
+}
+
+.info-section h3 {
+    font-size: 1.4rem;
+    color: #1e3a8a; /* Aerospace blue tone */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Cleans up the bullet lists and prevents word breaks */
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 8px;
+    word-break: normal; /* Fixes mid-word wrapping */
+}
+
+/* Turns your list of skills into clean, modern pill tags */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid #bfdbfe;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<main class="portfolio-container">
+  
+  <header class="profile-header">
+    <div class="bio-text">
+      <h1>PORTFOLIO</h1>
+      <h2>Sanskruti Diggikar</h2>
+      <p class="subtitle">Bachelor of Technology in Aerospace Engineering</p>
+      <p class="cgpa"><strong>CGPA (1st Year):</strong> 8.11</p>
+    </div>
+    <div class="profile-img-container">
+      <img src="C:\Users\Admin\Downloads\WhatsApp Image 2026-06-27 at 14.23.37 (1).jpeg" alt="Sanskruti Diggikar">
+    </div>
+  </header>
+
+  <hr>
+
+  <section class="info-section">
+    <h3>Education</h3>
+    <ul>
+      <li><strong>University:</strong> Ajeenkya D.Y. Patil University</li>
+      <li><strong>High School:</strong> D.Y. Patil Arts Commerce and Science College</li>
+      <li><strong>School:</strong> Ganesh English Medium School</li>
+      <li><strong>Board:</strong> Maharashtra State Board of Secondary and Higher Secondary Education</li>
+    </ul>
+  </section>
+
+  <section class="info-section">
+    <h3>Skills</h3>
+    <div class="skills-grid">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
+      <span>C</span><span>AutoCAD</span><span>Engineering Drawing</span><span>C++</span>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h3>Links</h3>
+    <ul class="links-list">
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanskruti-diggikar-57bb86259/">LINKEDIN PROFILE</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/sanskrutidiggikar39-cmyk">GITHUB PROFILE</a></li>
+    </ul>
+  </section>
+
+</main>
